@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form_main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /* gap: 4rem; */
+}
+
+.left_form {
+  width: 40%;
+  border-right: 2px solid #15c39a;
+  margin-top: 4rem;
+  padding-right: 5rem;
+}
+
+.right_form {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  position: relative;
+  top: -100px;
+}
+
+.right_form h3 {
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fma {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rows {
+  display: flex;
+}
+
+.rows1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.enstu {
+  background-color: brown;
+}
+
+.students{
+  padding-top: 3rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 35vw;
+}
+
+td,
+th {
+  border: 2px solid #a2f229;
+  text-align: left;
+  padding: 8px;
+}
+tr:first-child{
+  background-color: #a2f229;
+}
+/* tr:nth-child(even) {
+  background-color: #dddddd;
+} */
+
+ul{
+  list-style: none;
+}
+
+
+.icon{
+  font-size: 4rem;
+}
